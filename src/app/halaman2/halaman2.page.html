@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Halaman 2</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button routerLink="/halaman3">Pindah halaman 3</ion-button>
+  <div *ngFor="let data of semuaData">
+    <ion-label>Judul: {{data.judul}}</ion-label><br>
+    <ion-label>Isi: {{data.isi}}</ion-label><br>
+    <ion-label>Tanggal: {{data.tanggal}}</ion-label><br>
+    <ion-label>Status: {{data.status}}</ion-label><br>
+    <ion-label>Index: {{data.index}}</ion-label><br>
+    <ion-button (click)="favorite(data.index)">favorit</ion-button>
+  </div>
+</ion-content>

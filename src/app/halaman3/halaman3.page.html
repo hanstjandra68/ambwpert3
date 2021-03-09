@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Halaman 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let data of semuaData">
+    <ion-label>Judul: {{data.judul}}</ion-label><br>
+    <ion-label>Isi: {{data.isi}}</ion-label><br>
+    <ion-label>Tanggal: {{data.tanggal}}</ion-label><br>
+    <ion-label>Index: {{data.index}}</ion-label><br>
+    <hr>
+  </div>
+</ion-content>

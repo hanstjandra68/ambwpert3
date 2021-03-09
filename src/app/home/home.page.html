@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Halaman Pertama
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Halaman Pertama</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item>
+    <ion-input placeholder="judul" type="text" [(ngModel)]="textjudul"></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-input placeholder="isi" type="text" [(ngModel)]="textisi"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input placeholder="isi" type="date" [(ngModel)]="tanggal"></ion-input>
+  </ion-item>
+
+  <ion-button (click)="tambahdata()">Tambah Data</ion-button>
+  <ion-button routerLink="/halaman2">Pindah halaman 2</ion-button>
+  <ion-button routerLink="/halaman3">Pindah halaman 3</ion-button>
+
+</ion-content>
